@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Run artefacts (large media)
+runs/**/*.mp4
+runs/**/*.mov
+runs/**/*.png
+runs/**/*.jpg
+runs/**/*.wav
+runs/**/*.mp3
