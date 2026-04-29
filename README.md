@@ -48,14 +48,13 @@ NOTES.md    Canonical context. Append, don't refactor.
 
 ## Setup
 
-1. **API key.** Add `GEMINI_API_KEY` to `~/.claude/settings.json`:
-
-   ```json
-   { "env": { "GEMINI_API_KEY": "..." } }
-   ```
-
-   This keeps it out of the repo and out of any chat transcript. If you run
-   the script outside Claude Code, export it in your shell instead.
+1. **API key.** `GEMINI_API_KEY` needs to be in the environment.
+   - **Desktop Claude Code:** add to `~/.claude/settings.json` under `"env"`.
+   - **Cloud-mobile Claude Code:** add via your environment's variables panel
+     in claude.ai/code (mobile browser is fine). Caveat: the UI explicitly
+     warns that variables aren't encrypted secrets — restrict the key on
+     Google's side (quotas, IP scopes) so blast radius is bounded.
+   - **Local terminal:** `export GEMINI_API_KEY=...` in your shell.
 
 2. **Python deps.**
 
@@ -64,16 +63,45 @@ NOTES.md    Canonical context. Append, don't refactor.
    pip install -r scripts/requirements.txt
    ```
 
+   `yt-dlp` is installed alongside `google-genai` so the script can take URLs
+   directly (TikTok, YouTube, Reels, X, etc.).
+
 ## Running Stage 1 against a video
+
+Local file:
 
 ```sh
 python scripts/analyze_video.py path/to/seed.mp4 --out runs/01-<label>/analysis.json
 ```
 
-Uploads the local file via the Gemini Files API, runs `gemini-2.5-pro` with
-a JSON schema mirroring the 12 sections of `prompts/decompose.md`, and writes
-the structured analysis to disk. Then run Stage 2 (Abstract) in Claude using
-that JSON as input.
+URL:
+
+```sh
+python scripts/analyze_video.py "https://www.tiktok.com/@user/video/123" \
+  --out runs/02-<label>/analysis.json
+```
+
+When given a URL, the script runs `yt-dlp` first, drops the file as
+`source.<ext>` next to your `--out` path (gitignored), then proceeds. For
+sites that require auth, pass `--cookies-from-browser chrome` (or `firefox`).
+
+Either way: uploads to the Gemini Files API, runs `gemini-2.5-pro` with a JSON
+schema mirroring the 12 sections of `prompts/decompose.md`, writes the
+structured analysis to disk. Then run Stage 2 (Abstract) in Claude using that
+JSON as input.
+
+### Sandbox limitation (Claude Code on mobile / web)
+
+The Claude Code cloud sandbox's egress IPs are on TikTok's, YouTube's, and
+similar platforms' datacenter blocklists — `yt-dlp` will get HTTP 403 / player
+extraction errors from inside the sandbox. Two workable paths:
+
+- **Run the script locally** on your laptop where the IP is residential.
+- **Rip on your phone** (e.g. snaptik.app or ssstik.io in a mobile browser),
+  upload the MP4 to the Gemini app with the prompt from
+  `prompts/decompose.md`, and paste the JSON into the run folder yourself.
+  This is the documented workaround until cloud-managed sessions get a clean
+  secrets-injection path *and* better egress.
 
 ## How to start a run
 
