@@ -1,0 +1,165 @@
+{
+  "premise": "A dramatic personal hook transitions into a tactile, rapid-fire screen-recording tutorial demonstrating an AI marketing tool's generation capabilities.",
+  "hook": {
+    "opening_frame": "Close-up of a young woman's face, hand covering her mouth in a gesture of absolute disbelief, staring off-camera.",
+    "opening_line": "This just replaced my ENTIRE marketing team 🤯",
+    "opening_action": "Subtle eye widening and a slight, frozen head shake conveying shock.",
+    "pattern_interrupt": "The extreme, high-stakes claim of replacing a whole team paired with a silent, highly emotive physical reaction rather than spoken dialogue.",
+    "why_thumb_stops": "Combines a professional anxiety trigger (job replacement by AI) with intense personal emotion, creating an immediate curiosity gap about what tool caused this reaction."
+  },
+  "beat_sheet": [
+    {
+      "timestamp": "00:00",
+      "what_happens": "Woman covers mouth in disbelief overlaid with bold claim text.",
+      "why_it_works": "Establishes high stakes and emotional investment immediately.",
+      "psychological_lever": "curiosity gap",
+      "tension_or_reward": "tension"
+    },
+    {
+      "timestamp": "00:01",
+      "what_happens": "Physical pink pen points at a laptop screen, highlighting the copy action on the Lululemon URL.",
+      "why_it_works": "Grounds the digital action with a physical prop; uses a recognizable premium brand to establish a baseline of quality.",
+      "psychological_lever": "social proof",
+      "tension_or_reward": "reward"
+    },
+    {
+      "timestamp": "00:04",
+      "what_happens": "Navigation to vibiz.ai and pasting the copied URL into the central search bar.",
+      "why_it_works": "Shows the extreme low-barrier-to-entry of the tool; no complex setup required.",
+      "psychological_lever": "curiosity gap",
+      "tension_or_reward": "tension"
+    },
+    {
+      "timestamp": "00:08",
+      "what_happens": "Tool extracts and displays Lululemon's specific hex codes and typography automatically.",
+      "why_it_works": "Validates the tool's intelligence by successfully deconstructing a known brand's visual identity in real-time.",
+      "psychological_lever": "transformation",
+      "tension_or_reward": "reward"
+    },
+    {
+      "timestamp": "00:12",
+      "what_happens": "A loading screen gives way to a full grid of generated, on-brand advertising creatives.",
+      "why_it_works": "Delivers the core promise of the hook (replacing a team) by showing a massive volume of output generated instantly.",
+      "psychological_lever": "transformation",
+      "tension_or_reward": "reward"
+    },
+    {
+      "timestamp": "00:18",
+      "what_happens": "Final generated ad is shown full screen with a prompt to comment a keyword.",
+      "why_it_works": "Capitalizes on the viewer's newly established desire for the tool by offering immediate access via an algorithm-boosting action.",
+      "psychological_lever": "curiosity gap",
+      "tension_or_reward": "tension"
+    }
+  ],
+  "characters": [
+    {
+      "archetype": "The Savvy Insider",
+      "age_range": "20-30",
+      "styling": "Polished casual; long loose brunette waves, subtle makeup emphasizing wide, bright eyes, clean white manicure.",
+      "wardrobe": "Minimalist black crewneck top.",
+      "energy": "Astonished, breathless, urgent.",
+      "delivery_style": "Silent physical acting; relies entirely on facial expression and gesture.",
+      "casting_notes": "Requires highly expressive eyes and the ability to convey high stakes without looking over-the-top or comedic."
+    }
+  ],
+  "scene_art_direction": {
+    "location": "Minimalist home office or bedroom.",
+    "set_dressing": "Bare greige walls, glimpse of a dark flat-screen TV/monitor, blurred clothing rack in the deep background.",
+    "props": "Bright pink felt-tip pen, silver MacBook Air.",
+    "lighting_direction": "Soft, diffuse natural daylight from a window facing the subject, creating flattering catchlights in the eyes.",
+    "colour_palette": "Neutral greys, blacks, and browns in the live-action; transitioning to the bright white, deep red, and dark greys of the Lululemon digital interface.",
+    "time_of_day": "Daytime",
+    "texture": "Smooth, matte live-action transitioning to sharp, backlit digital screen recording."
+  },
+  "camera": [
+    {
+      "timestamp": "00:00",
+      "shot_type": "Close-up",
+      "lens_feel": "Standard smartphone front-facing camera",
+      "angle": "Slightly low angle",
+      "height": "Eye level",
+      "movement": "handheld",
+      "transition_in": "Hard cut"
+    },
+    {
+      "timestamp": "00:01",
+      "shot_type": "Extreme Close-up / Screen recording hybrid",
+      "lens_feel": "Smartphone main lens recording a physical laptop screen",
+      "angle": "Slightly downward",
+      "height": "Seated desk height",
+      "movement": "handheld",
+      "transition_in": "Hard cut"
+    }
+  ],
+  "motion_pacing": {
+    "cut_frequency": "Moderate; cuts follow logical steps in the UI workflow, occurring every 2-4 seconds.",
+    "energy_curve": "Spikes immediately at the hook, drops into an instructional mid-section, peaks again at the final grid reveal.",
+    "where_it_slows": "During the 'Generating your Business DNA' phase to build anticipation for the output.",
+    "where_it_accelerates": "The rapid sequence of highlighting, copying the URL, and navigating to the new tab."
+  },
+  "audio": {
+    "vo_or_dialogue_cadence": "No voiceover. Narrative is driven entirely by on-screen text and physical actions.",
+    "music_genre": "Upbeat indie pop/rock",
+    "music_bpm": "125",
+    "sfx_moments": "None audible",
+    "use_of_silence": "None"
+  },
+  "script_verbatim": "[Music playing throughout. No dialogue.]\n[00:00 Text: This just replaced my ENTIRE marketing team 🤯]\n[00:02 Text: Copy website URL]\n[00:04 Text: Go to this website]\n[00:06 Text: Paste the website link]\n[00:09 Text: It will generate your business DNA]\n[00:13 Text: One month of creatives ready in seconds]\n[00:18 Text: Comment VIBE to try it]",
+  "on_screen_text": [
+    {
+      "timestamp": "00:00",
+      "copy": "This just replaced my ENTIRE marketing team 🤯",
+      "font_feel": "Classic platform native sans-serif, bold, white with black outline",
+      "placement": "Upper middle third, floating above eye level",
+      "duration": "00:02"
+    },
+    {
+      "timestamp": "00:02",
+      "copy": "Copy website URL",
+      "font_feel": "Classic platform native sans-serif, bold, white with subtle shadow",
+      "placement": "Lower middle third",
+      "duration": "00:02"
+    },
+    {
+      "timestamp": "00:04",
+      "copy": "Go to this website",
+      "font_feel": "Classic platform native sans-serif, bold, white with subtle shadow",
+      "placement": "Lower middle third",
+      "duration": "00:02"
+    },
+    {
+      "timestamp": "00:06",
+      "copy": "Paste the website link",
+      "font_feel": "Classic platform native sans-serif, bold, white with subtle shadow",
+      "placement": "Lower middle third",
+      "duration": "00:02"
+    },
+    {
+      "timestamp": "00:09",
+      "copy": "It will generate your business DNA",
+      "font_feel": "Classic platform native sans-serif, bold, white with subtle shadow",
+      "placement": "Lower middle third",
+      "duration": "00:03"
+    },
+    {
+      "timestamp": "00:13",
+      "copy": "One month of creatives ready in seconds",
+      "font_feel": "Classic platform native sans-serif, bold, white with subtle shadow",
+      "placement": "Lower middle third",
+      "duration": "00:04"
+    },
+    {
+      "timestamp": "00:18",
+      "copy": "Comment VIBE to try it",
+      "font_feel": "Classic platform native sans-serif, bold, white with subtle shadow",
+      "placement": "Lower middle third",
+      "duration": "00:01"
+    }
+  ],
+  "format": {
+    "aspect_ratio": "9:16",
+    "length_seconds": 19,
+    "platform_native_cues": "Native text overlays, lack of highly produced voiceover, tactical use of an engagement-bait comment CTA, physical pointing at a screen mimicking organic 'life hack' formatting."
+  },
+  "why_it_works": "The video leverages a hyper-emotive hook—threatening job security in a relatable industry—to instantly capture attention. It bypasses verbal explanation, using a silent 'show, don't tell' approach with a physical pen guiding the viewer's eye. This tactile element makes a complex AI process feel grounded and simple. Using a globally recognized brand (Lululemon) provides immediate credibility and visual contrast; viewers instantly recognize the generated assets as 'on-brand.' The pacing mirrors a magic trick: the pledge (the URL), the turn (the AI processing), and the prestige (instant ad creatives), culminating in a low-friction, high-conversion call to action."
+}
